@@ -1,0 +1,374 @@
+/* { } */
+/* PONER EL RESET DE HTML */
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+  }
+
+html{ 
+    font-size: 62.5%;
+  }
+ 
+/*celulares*/
+
+
+/* 1) caracteristicas globales */
+
+
+
+body{
+    background-color: darksalmon;
+}
+
+/*arriba del navegador*/
+.deco-interiores{ 
+   
+
+    color:rgb(249, 238, 238);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+
+
+}
+
+.header-class{ 
+ 
+
+position: sticky;
+z-index: 2;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+}
+
+.color-menu 
+{
+ 
+  background-color: rgb(210, 134, 109);
+ 
+}
+ul li a:hover {
+  background-color: coral;
+}
+ul li a:active {
+  background-color: rgb(239, 106, 57);
+}
+
+
+h1, h2, h3, h4, h5 { 
+ 
+   color:rgb(249, 238, 238);
+   font-family: 'Vidaloka', serif;
+   text-align:center;
+   font-size: 400%;
+   padding: 4rem;
+  
+  
+   
+}
+
+p{
+   color:rgb(249, 238, 238);
+   font-family: 'Vidaloka', serif;
+   text-align:center; 
+ 
+ margin: 7%;
+ 
+ font-size: 200%;
+}
+
+
+
+nav ul li { 
+
+ font-size: 200%;
+ 
+
+}
+
+
+
+.footer-flex{ 
+  display: flex;
+  flex-direction: row;
+  margin-top: 20%;
+  padding: 10%;
+  background-color: black;
+ 
+ 
+ }
+
+
+ label
+ {
+   display: block;
+  }
+ .formulario{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+
+
+/*HOME -------------------------------------------*/
+
+.importante-deco {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center ;
+  align-content: center;
+ }
+
+ main section article img{
+  height: 50%;
+  width: 50%;
+ }
+
+
+ article .img-desaparece{
+  display: none;
+ }
+
+
+ .rincones-magicos{ 
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+ }
+
+ .img-rinc-mag {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  } 
+
+  
+  
+
+
+
+
+
+/*LIVING----------------------------------------- */
+   .grid-living{ 
+    display: grid;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-columns: auto;
+   }
+ 
+
+   .tamaño-carousel{
+    height: 700px;
+    width: 300px;
+     }
+     
+
+
+          aside .seccion-plantas {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            }
+
+        .video-plantas{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+
+          }
+  
+         
+          
+       
+          
+
+   /*COCINA---------------------------------------*/
+.cocina-grid{
+  display:grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+
+}
+
+.cocina-fixed{
+   
+    background-color: aqua;
+
+    position:fixed;
+    top:0  ;
+    
+   }
+
+   .footer-flex{
+    z-index: 3;
+   }
+
+  
+ 
+     
+
+  /*DORMITORIO---------------------*/
+  .dormitorio-grid{ 
+    display: grid;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-columns: auto;
+
+ 
+      }
+
+
+  .seccion-tendencias{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    
+    }
+
+  
+
+      
+
+   @media screen and (min-width: 768px) {
+
+/* 1) caracteristicas globales */
+  
+      p{
+        font-size: 300%;
+        }
+
+    /*HOME */
+
+    article .img-home{
+      display: inline;
+      border: 1px solid;
+     }
+
+     div .img-desaparece{
+      display: inline;
+     
+     }
+
+     main section article img{
+      height: 100%;
+      width: 100%;
+     }
+    
+     .importante-deco{
+     
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-template-rows: 1fr;
+      margin: 3rem 2rem 3rem 2rem;
+      
+     }
+
+     /*LIVING*/
+
+      .grid-carrusel { 
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      align-items: center;
+
+      }
+    
+    
+
+
+    /*COCINA*/
+
+
+
+      
+
+    
+
+    }
+
+   @media screen and (min-width: 1024px) { 
+ 
+ 
+ 
+ 
+    /* 1) caracteristicas globales */
+    h1, h2, h3, h4, h5 { 
+        font-size: 400%;
+
+   }
+
+    p{
+    font-size: 300%;
+    }
+
+
+   /*LIVING */
+
+  .grid-living{
+      display: grid;
+      grid-template-areas: 
+      "header header header"
+      "main main aside"
+      
+      "footer footer footer";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 20% 60% 20%;
+    
+ }
+
+    .area-header{
+      grid-area: header ;
+        }
+    .area-main{
+        grid-area: main ;
+        }
+    .area-aside{
+          grid-area: aside;
+          font-size: 80%;
+          overflow: hidden;
+        }
+    .area-footer{
+      grid-area: footer ;
+      }
+
+    .area-aside {
+     border: 1px solid black;
+      }
+      .footer-flex{ 
+     
+        margin-top: 0%;
+     
+       
+       }
+  
+
+
+ /*COCINA*/
+
+
+
+
+
+
+
+  }
+
+ 
+
