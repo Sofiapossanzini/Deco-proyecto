@@ -87,8 +87,15 @@ p{
 
    
   /*DORMITORIO---------------------*/
-
-  
+  .dormitorio-grid{
+    @extend %estilos-uno;
+    img { 
+      @include estilos-base (100%,80%);
+    }
+  }
+  .seccion-tendencias{
+    @extend %estilos-uno;
+  }
      /*contacto*/
 
   .formulario{

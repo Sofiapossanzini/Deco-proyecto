@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.rincones-magicos, aside .seccion-plantas, .cocina-grid, .formulario {
+.rincones-magicos, aside .seccion-plantas, .cocina-grid, .dormitorio-grid, .seccion-tendencias, .formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,7 @@ ul li a:active {
 nav ul li {
   font-size: 200%; }
 
-.rincones-magicos, aside .seccion-plantas, .cocina-grid, .formulario {
+.rincones-magicos, aside .seccion-plantas, .cocina-grid, .dormitorio-grid, .seccion-tendencias, .formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,6 +93,11 @@ article .img-desaparece {
 
 /*COCINA---------------------------------------*/
 /*DORMITORIO---------------------*/
+.dormitorio-grid img {
+  height: 100%;
+  width: 80%;
+  overflow: auto; }
+
 /*contacto*/
 label {
   display: block; }
@@ -172,11 +177,12 @@ label {
     align-items: center; } }
 
 footer {
-  background-color: black;
+  background-color: #ff957d;
   position: relative;
   width: 100%;
   height: 20%;
-  margin-bottom: 0%; }
+  margin-bottom: 0%;
+  font-size: 40%; }
 
 html {
   margin: 0;
@@ -187,9 +193,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: darksalmon; }
+  background-image: linear-gradient(to top, #efb5a2, darksalmon); }
 
-.rincones-magicos, aside .seccion-plantas, .cocina-grid, .formulario {
+.rincones-magicos, aside .seccion-plantas, .cocina-grid, .dormitorio-grid, .seccion-tendencias, .formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
