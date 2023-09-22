@@ -1,0 +1,216 @@
+@charset "UTF-8";
+.rincones-magicos, aside .seccion-plantas, .cocina-grid, .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.header-class, .importante-deco, .img-rinc-mag, .video-plantas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.grid-living {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center; }
+
+h1, h2, h3, h4, h5 {
+  color: #f9eeee;
+  font-family: 'Vidaloka', serif;
+  text-align: center;
+  font-size: 400%;
+  padding: 4rem; }
+
+.deco-interiores {
+  color: #f9eeee;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 300%; }
+
+.color-menu {
+  background-color: #d2866d; }
+
+ul li a:hover {
+  background-color: coral; }
+
+ul li a:active {
+  background-color: #ef6a39; }
+
+nav ul li {
+  font-size: 200%; }
+
+.rincones-magicos, aside .seccion-plantas, .cocina-grid, .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.header-class, .importante-deco, .img-rinc-mag, .video-plantas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.grid-living {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center; }
+
+h1, h2, h3, h4, h5 {
+  color: #f9eeee;
+  font-family: 'Vidaloka', serif;
+  text-align: center;
+  font-size: 400%;
+  padding: 4rem; }
+
+p {
+  color: #f9eeee;
+  font-family: 'Vidaloka', serif;
+  text-align: center;
+  margin: 7%;
+  font-size: 200%; }
+
+/*HOME -------------------------------------------*/
+main section article img {
+  height: 50%;
+  width: 50%;
+  overflow: auto; }
+
+article .img-desaparece {
+  display: none; }
+
+/*LIVING----------------------------------------- */
+.tamaño-carousel {
+  height: 700px;
+  width: 300px;
+  overflow: auto; }
+
+/*COCINA---------------------------------------*/
+/*DORMITORIO---------------------*/
+/*contacto*/
+label {
+  display: block; }
+
+@media screen and (min-width: 768px) {
+  p {
+    text-align: center;
+    font-size: 300%; }
+  /*HOME */
+  article .img-home {
+    display: inline;
+    border: 1px solid; }
+  div .img-desaparece {
+    display: inline; }
+  main section article img {
+    height: 100%;
+    width: 100%;
+    overflow: auto; }
+  .importante-deco {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 3rem 2rem 3rem 2rem; }
+  /*LIVING*/
+  .grid-carrusel {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center; } }
+
+@media screen and (min-width: 1024px) {
+  h1, h2, h3, h4, h5 {
+    font-size: 400%; }
+  p {
+    text-align: center;
+    font-size: 300%; }
+  /*LIVING */
+  .grid-living {
+    display: grid;
+    grid-template-areas: "header header header" "main main aside" "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 60% 20%; }
+  .area-header {
+    grid-area: header; }
+  .area-main {
+    grid-area: main; }
+  .area-aside {
+    grid-area: aside;
+    font-size: 80%;
+    overflow: hidden; }
+  .area-footer {
+    grid-area: footer; }
+  .area-aside {
+    border: 1px solid black; }
+  /*COCINA*/
+  .cocina-flex {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center; }
+  /*DORMITORIO*/
+  .dormitorio-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center; }
+    .dormitorio-grid section img {
+      height: 800px;
+      width: 600px;
+      overflow: auto; }
+  .seccion-tendencias {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center; } }
+
+footer {
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 0%; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: darksalmon; }
+
+.rincones-magicos, aside .seccion-plantas, .cocina-grid, .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.header-class, .importante-deco, .img-rinc-mag, .video-plantas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.grid-living {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center; }
+
+h1, h2, h3, h4, h5 {
+  color: #f9eeee;
+  font-family: 'Vidaloka', serif;
+  text-align: center;
+  font-size: 400%;
+  padding: 4rem; }

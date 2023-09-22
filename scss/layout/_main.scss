@@ -1,0 +1,206 @@
+@import "../utilities/extend";
+@import "../utilities/mixin";
+
+
+h1, h2, h3, h4, h5{ 
+ @extend %estilos-h;
+
+}
+
+p{
+  color:rgb(249, 238, 238);
+  font-family: 'Vidaloka', serif;
+  text-align:center; 
+  margin: 7%;
+  font-size: 200%;
+}
+
+
+/*HOME -------------------------------------------*/
+
+.importante-deco { 
+ 
+  @extend %estilos-dos;
+  
+
+ }
+
+
+ main section article img{
+  @include estilos-base (50%, 50%)
+ }
+
+
+ article .img-desaparece{
+  display: none;
+ }
+
+
+ .rincones-magicos{ 
+ 
+  @extend %estilos-uno;
+  
+
+ }
+ 
+ .img-rinc-mag{ 
+ 
+  @extend %estilos-dos;
+  
+
+ }
+
+
+  /*LIVING----------------------------------------- */
+  .grid-living{ 
+   @extend %estilos-tres;
+   }
+ 
+
+   .tamaño-carousel{
+    @include estilos-base(700px, 300px)
+     }
+     
+
+    aside .seccion-plantas{
+     @extend %estilos-uno;
+                 }
+
+    .video-plantas{ 
+ 
+      @extend %estilos-dos;
+      
+    
+     }
+    
+       
+
+   /*COCINA---------------------------------------*/
+
+   .cocina-grid{ 
+    @extend %estilos-uno;
+   
+    
+         }
+
+
+
+   
+  /*DORMITORIO---------------------*/
+
+  
+     /*contacto*/
+
+  .formulario{
+    @extend %estilos-uno;
+   }
+  
+   label
+   {
+     display: block;
+    }
+  
+
+    @media screen and (min-width: 768px) {
+        
+            p{
+              text-align: center;
+              font-size: 300%;
+              }
+      
+          /*HOME */
+      
+          article .img-home{
+           @include estilos-base-dos(1px solid) 
+            
+           }
+      
+           div .img-desaparece{
+            display: inline;
+           
+           }
+      
+           main section article img{
+            @include estilos-base (100%,100%)
+           }
+          
+           .importante-deco{
+           @include estilos-cinco
+            
+           }
+      
+           /*LIVING*/
+      
+            .grid-carrusel { 
+            @include estilos-seis;
+      
+            }
+    }
+      
+         @media screen and (min-width: 1024px) { 
+       
+       
+       
+       
+    
+          h1, h2, h3, h4, h5 { 
+              @include estilos-font-size
+      
+         }
+      
+          p{
+            text-align: center;
+            font-size: 300%;
+          }
+      
+      
+         /*LIVING */
+      
+        .grid-living{
+           @include estilo-grid-area
+          
+       }
+      
+          .area-header{
+            grid-area: header ;
+              }
+          .area-main{
+              grid-area: main ;
+              }
+          .area-aside{
+                grid-area: aside;
+                font-size: 80%;
+                overflow: hidden;
+              }
+          .area-footer{
+            grid-area: footer ;
+            }
+      
+          .area-aside {
+           border: 1px solid black;
+            }
+
+    
+         /*COCINA*/
+         .cocina-flex{
+         @include estilos-seis
+            }
+         
+          /*DORMITORIO*/
+          .dormitorio-grid{ 
+            @include estilo-uno
+                section{ 
+                  img { 
+                      @include estilos-base(800px, 600px)
+                  }
+
+               } 
+            
+            }
+          .seccion-tendencias{ 
+               @include estilo-uno
+                   
+              }
+            
+                 
+        }

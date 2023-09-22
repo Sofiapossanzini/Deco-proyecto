@@ -1,0 +1,43 @@
+@import "../utilities/variables";
+@import "../utilities/extend";
+
+
+
+.deco-interiores{ 
+   
+
+    color:$secondary-color;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+
+
+}
+
+.header-class{ 
+ 
+  @extend %estilos-dos;
+  
+
+ }
+
+.color-menu{
+ 
+  background-color: $tercer-color;
+ 
+}
+
+ul li a:hover {
+    background-color: $cuarto-color;
+  }
+  ul li a:active {
+    background-color: $quinto-color;
+  }
+
+  nav ul li { 
+
+    font-size: 200%;
+    
+    
+   }
+   

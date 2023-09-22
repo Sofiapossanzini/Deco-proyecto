@@ -1,0 +1,64 @@
+
+
+@mixin estilos-base ($height, $width){
+    height: $height; 
+    width: $width; 
+    overflow: auto;
+
+   }
+    
+
+   @mixin estilos-base-dos ($border){
+    display: inline;
+    border: $border;
+   }
+
+   @mixin estilos-cinco {
+
+           
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    margin: 3rem 2rem 3rem 2rem;
+    
+   }
+
+   @mixin estilos-seis{ 
+    display: grid;
+    grid-template-columns: auto auto;
+     align-items: center;
+    justify-items: center;
+    }
+
+    @mixin estilos-font-size{ 
+        font-size: 400%;
+    
+    }
+
+    @mixin estilo-grid-area{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main aside"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 60% 20%;
+      
+   }
+
+   @mixin estilo-cuatro{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+  
+  }
+
+   @mixin estilo-uno {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: center;
+
+   }
